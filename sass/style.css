@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 80%;
+  padding: 20px;
+  border-radius: 15px;
+  font-weight: 900;
+}
+
+.card__container {
+  width: 350px;
+  background-color: #f5f7ff;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+.card__container .card__img {
+  border-radius: 20px 20px 0 0;
+  height: 170px;
+}
+.card__container .card__content {
+  margin: 20px auto;
+  text-align: center;
+}
+.card__container .card__content .card__info .card__title {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.9;
+  color: #1f2f56;
+}
+.card__container .card__content .card__info .card__description {
+  margin: 0 50px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7280a7;
+}
+.card__container .card__content .card__info .card__plan {
+  width: 80%;
+  padding: 10px;
+  margin: 40px auto;
+  background-color: #e6ecff;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+.card__container .card__content .card__info .card__plan .card__plan-img {
+  object-fit: cover;
+  margin-right: 20px;
+}
+.card__container .card__content .card__info .card__plan .card__plan-info {
+  margin-right: 50px;
+}
+.card__container .card__content .card__info .card__plan .card__plan-info span {
+  font-weight: 900;
+  color: #1f2f56;
+}
+.card__container .card__content .card__info .card__plan .card__plan-info p {
+  font-weight: 400;
+  color: #7280a7;
+}
+.card__container .card__content .card__info .card__plan .card__link {
+  font-size: 16px;
+  color: #3829e0;
+  font-weight: 700;
+}
+.card__container .card__content .card__info .card__plan .card__link:hover {
+  text-decoration: none;
+}
+.card__container .card__content .card__info .card__btn--payment {
+  background-color: #3829e0;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.4);
+  color: #f5f7ff;
+  margin-bottom: 20px;
+}
+.card__container .card__content .card__info .card__btn--cancel {
+  color: #7280a7;
+  background: none;
+}
+
+@media screen and (max-width: 375px) {
+  .card__container {
+    width: 320px;
+    height: 98%;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

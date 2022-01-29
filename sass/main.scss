@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;900&display=swap');
+
+//COLORS
+
+//Primary
+$pale-blue-color: hsl(225, 100%, 98%);
+$bright-blue-color: hsl(245, 75%, 52%);
+//Neutral
+$very-pale-blue-color: hsl(225, 100%, 95%);
+$desa-urated-blue-color: hsl(224, 23%, 55%);
+$dark-blue-color: hsl(223, 47%, 23%);
+
+
+//FONT SIZE & WEIGHT
+$body-font: 'Red Hat Display', sans-serif;
+
+$big-font-size: 28px;
+$body-font-size: 16px;
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-big: 900;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: $body-font;
+    font-size: $body-font-size;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+//SCSS COMPONENT BUTTON
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 80%;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: $font-weight-big;
+}
+
+
+//Card 
+
+.card__container{
+    width: 350px;
+    background-color: $pale-blue-color;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+
+
+    .card__img{
+        border-radius: 20px 20px 0 0;
+        height: 170px;
+    }
+
+    .card__content{
+        margin: 20px auto;
+        text-align: center;
+
+        .card__info{
+
+            .card__title{
+                font-size: $big-font-size;
+                font-weight: $font-weight-big;
+                line-height: 1.9;
+                color: $dark-blue-color;
+            }
+
+            .card__description{
+                margin: 0 50px;
+                font-size: $body-font-size;
+                font-weight: $font-weight-normal;
+                color: $desa-urated-blue-color;    
+            }
+
+            .card__plan{
+                width: 80%;
+                padding: 10px;
+                margin: 40px auto;
+                background-color: $very-pale-blue-color;
+                border-radius: 10px;
+                box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1);
+                display: flex;
+                align-items: center;
+
+                .card__plan-img{
+                    object-fit: cover;
+                    margin-right: 20px;
+                }
+                .card__plan-info{
+                    margin-right: 50px;
+                    span{
+                       font-weight: $font-weight-big;
+                       color: $dark-blue-color; 
+                    }
+                    p{
+                        font-weight: $font-weight-normal;
+                        color: $desa-urated-blue-color; 
+                        
+                    }
+                }
+
+                .card__link{
+                    font-size: $body-font-size;
+                    color: $bright-blue-color;
+                    font-weight: $font-weight-bold;
+
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .card__btn--payment{
+                background-color: $bright-blue-color;
+                box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.4);
+                color: $pale-blue-color;
+                margin-bottom: 20px;
+            }
+            .card__btn--cancel{
+                color: $desa-urated-blue-color;
+                background: none;
+            }
+        }
+    }
+}
+
+
+
+//Mobile
+@media screen and (max-width: 375px){
+    .card__container{
+        width: 320px;
+        // height: 98%;
+        margin: 0 auto;
+    }
+    
+}
+
+// .attribution { font-size: 11px; text-align: center; }
+// .attribution a { color: hsl(228, 45%, 44%); }
