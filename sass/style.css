@@ -14,6 +14,7 @@ body {
   font-size: 16px;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: url(../images/pattern-background-desktop.svg);
@@ -101,7 +102,7 @@ body {
   background-color: #3829e0;
   box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.4);
   color: #fafbff;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .card__container .card__content .card__info .card__btn--payment:hover {
   background-color: #796ef7;
@@ -114,11 +115,42 @@ body {
   color: #1f2f56;
 }
 
+footer {
+  margin-top: 60px;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: #3e52a3;
+}
+
 @media screen and (max-width: 375px) {
   .card__container {
     width: 320px;
-    height: 90%;
     margin: 0 auto;
+  }
+  .card__container .card__img {
+    height: 150px;
+  }
+  .card__container .card__content {
+    margin: 10px auto;
+  }
+  .card__container .card__content .card__info .card__title {
+    line-height: 2.3;
+    font-size: 24px;
+  }
+  .card__container .card__content .card__info .card__description {
+    margin: 0 30px;
+  }
+  .card__container .card__content .card__info .card__plan {
+    padding: 10px;
+  }
+  .card__container .card__content .card__info .card__plan .card__plan-info p,
+.card__container .card__content .card__info .card__plan span,
+.card__container .card__content .card__info .card__plan .card__link {
+    font-size: 13px;
   }
 }
 
