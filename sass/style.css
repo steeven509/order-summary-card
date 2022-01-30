@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   background: url(../images/pattern-background-desktop.svg);
+  background-color: #e6ecff;
   background-repeat: no-repeat;
 }
 
@@ -25,58 +26,62 @@ body {
   outline: none;
   cursor: pointer;
   width: 80%;
-  padding: 20px;
-  border-radius: 15px;
+  padding: 13px;
+  border-radius: 10px;
   font-weight: 900;
 }
 
 .card__container {
-  width: 350px;
-  background-color: #f5f7ff;
+  width: 360px;
+  background-color: #fafbff;
   border-radius: 20px;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
 }
 .card__container .card__img {
   border-radius: 20px 20px 0 0;
-  height: 170px;
+  height: 180px;
 }
 .card__container .card__content {
-  margin: 20px auto;
+  margin: 30px auto;
   text-align: center;
 }
 .card__container .card__content .card__info .card__title {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 900;
-  line-height: 1.9;
+  line-height: 2.5;
   color: #1f2f56;
 }
 .card__container .card__content .card__info .card__description {
   margin: 0 50px;
   font-size: 16px;
+  line-height: 1.4;
   font-weight: 400;
   color: #7280a7;
 }
 .card__container .card__content .card__info .card__plan {
   width: 80%;
-  padding: 10px;
-  margin: 40px auto;
-  background-color: #e6ecff;
+  padding: 15px;
+  margin: 30px auto;
+  background-color: #f3f6fb;
   border-radius: 10px;
-  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 3px 10px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
 }
 .card__container .card__content .card__info .card__plan .card__plan-img {
   object-fit: cover;
+  width: 45px;
+  height: 45px;
   margin-right: 20px;
 }
 .card__container .card__content .card__info .card__plan .card__plan-info {
-  margin-right: 50px;
+  margin-right: 40px;
 }
 .card__container .card__content .card__info .card__plan .card__plan-info span {
   font-weight: 900;
+  line-height: 1.7;
   color: #1f2f56;
 }
 .card__container .card__content .card__info .card__plan .card__plan-info p {
@@ -84,28 +89,35 @@ body {
   color: #7280a7;
 }
 .card__container .card__content .card__info .card__plan .card__link {
-  font-size: 16px;
+  font-size: 14px;
   color: #3829e0;
   font-weight: 700;
 }
 .card__container .card__content .card__info .card__plan .card__link:hover {
+  color: #796ef7;
   text-decoration: none;
 }
 .card__container .card__content .card__info .card__btn--payment {
   background-color: #3829e0;
   box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.4);
-  color: #f5f7ff;
-  margin-bottom: 20px;
+  color: #fafbff;
+  margin-bottom: 15px;
+}
+.card__container .card__content .card__info .card__btn--payment:hover {
+  background-color: #796ef7;
 }
 .card__container .card__content .card__info .card__btn--cancel {
   color: #7280a7;
   background: none;
 }
+.card__container .card__content .card__info .card__btn--cancel:hover {
+  color: #1f2f56;
+}
 
 @media screen and (max-width: 375px) {
   .card__container {
     width: 320px;
-    height: 98%;
+    height: 90%;
     margin: 0 auto;
   }
 }
